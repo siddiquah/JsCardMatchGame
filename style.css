@@ -1,0 +1,133 @@
+body {
+    background: #E1E1F4;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    height: 100%;
+    color: #BEBEE4;
+    text-align: center;
+}
+  
+h1{
+    margin-top: 10vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 2.3em;
+    text-transform: uppercase;
+}
+  
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+  
+#seconds,
+#tens {
+    font-size: 2em;
+}
+  
+button {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+    background: #82d2e5;
+    color: #fff;
+    border: solid 1px #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 18px 10px;
+    width: 180px;
+    margin: 10px;
+    outline: none;
+}
+
+button:hover {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background: #fff;
+    border: solid 1px #fff;
+    color: #82d2e5;
+}
+  
+#container {
+    width: 630px;
+    margin: 10px auto;
+}
+
+#container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+[data-view=card] {
+    transform: rotateY(180deg);
+    width: 100px;
+    height: 140px;
+    border: solid 1px #d3cece;
+    border-radius: 5px;
+    float: left;
+    box-shadow: inset 4px 4px 8px #BEBEE4, inset 4px -4px 8px #EFEFF9;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #E1E1F4;
+    background-size: 64px 128px;
+}
+  
+.flipped {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: none;
+    position: relative;
+    transform: rotateY(0deg);
+}
+  
+.reverse {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateY(180deg);
+}
+  
+.correct {
+    opacity: 0.5;
+    cursor: default;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateY(0deg);
+}
+  
+.correct[data-item=naruto],
+.flipped[data-item=naruto] {
+    background: url("naruto.png") left center no-repeat #fff;
+    background-size: contain;
+}
+  
+.correct[data-item=deku],
+.flipped[data-item=deku] {
+    background: url("deku.jpg") left center no-repeat #fff;
+    background-size: contain;
+}
+  
+.correct[data-item=erza],
+.flipped[data-item=erza] {
+    background: url("erza.jpg") left center no-repeat #fff;
+    background-size: contain;
+}
+  
+.correct[data-item=nezuko],
+.flipped[data-item=nezuko] {
+    background: url("nezuko.jpg") left center no-repeat #fff;
+    background-size: contain;
+}
+  
+.correct[data-item=saitama],
+.flipped[data-item=saitama] {
+    background: url("saitama.jpg") left center no-repeat #fff;
+    background-size: contain;
+}
+
